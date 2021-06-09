@@ -380,10 +380,12 @@
 .overlay {
     background-color: #F5F9F7;
     padding: 15px;
+    width: 320px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-.overlay {
-    width: 350px;
-}
+
 
 .overlay-text {
     font-style: normal;
@@ -403,4 +405,18 @@
 .overlay-link:hover {
     transition: 0.3s;
     border: 2px solid rgb(141, 138, 138);
+}
+
+.overlay-photos--list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.overlay-photos--item{
+    width: 30%;
+}
+.overlay-photos--item img{
+    width: 80px;
 }

@@ -16,371 +16,415 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="d-flex justify-content-between ">
+<body class=" ">
+    <div class="container-fluid d-flex">
+        <aside class="aside">
+            <div class="aside-btn--bg bg-dark text-center p-4">
+                <button class="menu-button bg-dark ">
+                    <img src="./assets/img/Group 574.svg" alt="" class="menu-img">
 
-    <aside class="aside">
-        <div class="aside-btn--bg bg-dark text-center p-4">
-            <button class="menu-button bg-dark ">
-                <img src="./assets/img/Group 574.svg" alt="" class="menu-img">
+                </button>
+            </div>
 
+            <ul class="aside-list list-unstyled">
+                <li class="aside-item">
+                    <a href="#" class="aside-link">
+                        <div class="aside-thumb active">
+                            <i class="fas fa-home aside-icon"></i></div>
+                        <p class="aside-title">
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
+
+                <li class="aside-item">
+                    <a href="#" class="aside-link">
+                        <div class="aside-thumb">
+                            <img src="./assets/img/Union.svg" alt="" class="aside-icon"></div>
+                        <p class="aside-title">
+                            Upcoming
+                        </p>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a href="#" class="aside-link">
+                        <div class="aside-thumb">
+                            <img src="./assets/img/compass.svg" alt="" class="aside-icon"></div>
+                        <p class="aside-title">
+                            Explore
+                        </p>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a href="#" class="aside-link">
+                        <div class="aside-thumb">
+                            <img src="./assets/img/person.svg" alt="" class="aside-icon"></div>
+                        <p class="aside-title">
+                            Profile
+                        </p>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a href="#" class="aside-link">
+                        <div class="aside-thumb">
+                            <img src="./assets/img/settings.svg" alt="" class="aside-icon"></div>
+                        <p class="aside-title">
+                            Settings
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+
+            <button class="aside-footer--btn">
+
+                <img class="aside-footer--icon" src="./assets/img/power.svg" alt="">
             </button>
-        </div>
+        </aside>
 
-        <ul class="aside-list list-unstyled">
-            <li class="aside-item">
-                <a href="#" class="aside-link">
-                    <div class="aside-thumb active">
-                        <i class="fas fa-home aside-icon"></i></div>
-                    <p class="aside-title">
-                        Dashboard
-                    </p>
-                </a>
-            </li>
+        <main class="main">
 
-            <li class="aside-item">
-                <a href="#" class="aside-link">
-                    <div class="aside-thumb">
-                        <img src="./assets/img/Union.svg" alt="" class="aside-icon"></div>
-                    <p class="aside-title">
-                        Upcoming
-                    </p>
-                </a>
-            </li>
-            <li class="aside-item">
-                <a href="#" class="aside-link">
-                    <div class="aside-thumb">
-                        <img src="./assets/img/compass.svg" alt="" class="aside-icon"></div>
-                    <p class="aside-title">
-                        Explore
-                    </p>
-                </a>
-            </li>
-            <li class="aside-item">
-                <a href="#" class="aside-link">
-                    <div class="aside-thumb">
-                        <img src="./assets/img/person.svg" alt="" class="aside-icon"></div>
-                    <p class="aside-title">
-                        Profile
-                    </p>
-                </a>
-            </li>
-            <li class="aside-item">
-                <a href="#" class="aside-link">
-                    <div class="aside-thumb">
-                        <img src="./assets/img/settings.svg" alt="" class="aside-icon"></div>
-                    <p class="aside-title">
-                        Settings
-                    </p>
-                </a>
-            </li>
-        </ul>
-
-
-        <button class="aside-footer--btn">
-
-            <img class="aside-footer--icon" src="./assets/img/power.svg" alt="">
-        </button>
-    </aside>
-
-    <main class="main">
-
-        <div class="navbar">
-            <div class="container">
-                <div class="">
-                    <h1 class="navbar-title">Shikra.</h1>
-                </div>
-                <form class="navbar-form">
-                    <img src="./assets/img/Union (1).svg" alt="" class="search-icon">
-                    <input type="text" placeholder="Search" class="navbar-input me-2">
-                    <button class="navbar-button">
-                        <img src="./assets/img/tune.svg" alt="">
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <div class="header">
-            <div class="container">
-                <div class=" d-flex justify-content-between align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="./assets/img/compass (1).svg" alt="">
-                        <h2 class="header-explore ms-3 mt-4">Explore</h2>
-                    </div>
-                    <div class="button-group me-4 pe-4">
-                        <button class="left-btn">
-                            <</button> <button class="right-btn">>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="header-part mt-4 d-flex justify-content-between align-items-center">
-                    <div class="header-rotate">
-                        <ul class="header-list list-unstyled">
-                            <li class="header-item">
-                                <button class="header-btn">
-                                    America
-                                </button>
-                            </li>
-                            <li class="header-item header-item--active">
-                                <button class="header-btn active">
-                                    Sights
-                                </button>
-                            </li>
-                            <li class="header-item">
-                                <button class="header-btn">
-                                    Europe
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header-picture mt-4 d-flex justify-content-between align-items-center">
-                        <ul class="picture-list list-unstyled">
-                            <li class="picture-item">
-                                <div class="header-images">
-                                    <img class="header-thumb" src="./assets/img/Rectangle 5 (1).svg" alt="">
-                                    <img class="picture-icon" src="./assets/img/Group 8.png" alt="">
-                                </div>
-                            </li>
-                            <li class="picture-item mt-3">
-                                <h3 class="picture-title">
-                                    Phi Phi Islands
-                                </h3>
-                            </li>
-
-                            <li class="picture-item d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <img class="picture-map" src="./assets/img/map.svg" alt="">
-                                    <p class="picture-loc mt-3 ms-2">
-                                        Thailand
-                                    </p>
-                                </div>
-                                <p class="picture-cost me-2">$1,480</p>
-                            </li>
-                        </ul>
-
-                        <ul class="picture-list list-unstyled">
-                            <li class="picture-item">
-                                <div class="header-images">
-                                    <img class="header-thumb" src="./assets/img/Rectangle 5.svg" alt="">
-                                    <img class="picture-icon" src="./assets/img/Group 8.png" alt="">
-                                </div>
-                            </li>
-                            <li class="picture-item mt-3">
-                                <h3 class="picture-title">
-                                    Kudahuvadhoo Island
-                                </h3>
-                            </li>
-
-                            <li class="picture-item d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <img class="picture-map" src="./assets/img/map.svg" alt="">
-                                    <p class="picture-loc mt-3 ms-2">
-                                        Maldives
-                                    </p>
-                                </div>
-                                <p class="picture-cost me-2">$1,480</p>
-                            </li>
-                        </ul>
-
-                        <ul class="picture-list list-unstyled">
-                            <li class="picture-item">
-                                <div class="header-images">
-                                    <img class="header-thumb" src="./assets/img/Rectangle 5 (2).svg" alt="">
-                                    <img class="picture-icon" src="./assets/img/Group 8.png" alt="">
-                                </div>
-                            </li>
-                            <li class="picture-item mt-3">
-                                <h3 class="picture-title">
-                                    Greecevillage
-                                </h3>
-                            </li>
-
-                            <li class="picture-item d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <img class="picture-map" src="./assets/img/map.svg" alt="">
-                                    <p class="picture-loc mt-3 ms-2">
-                                        Maldives
-                                    </p>
-                                </div>
-                                <p class="picture-cost me-2">$1,480</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="blok-part d-flex">
-                    <div class="header-blok mt-4 pt-4">
-
-                        <div class="header-friends d-flex justify-content-between align-items-center">
-                            <div class="d-flex">
-                                <img class="me-4" src="./assets/img/invite-friends.svg" alt="">
-                                <h3 class="fs-5">Invite Friends</h3>
-                            </div>
-                            <button class="dot-btn">
-                                <span class="dot"></span>
-                                <span class="dot mx-1"></span>
-                                <span class="dot"></span>
-                            </button>
-                        </div>
-
-
-
-                        <ul class="blok-list list-unstyled ">
-                            <li class="blok-item">
-                                <div class="blok-avatar">
-                                    <img src="./assets/img/avatar.svg" alt="">
-                                </div>
-                                <p class="bloks-name mt-2 mb-4">Nate</p>
-                                <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
-                                        alt=""></div>
-                            </li>
-                            <li class="blok-item">
-                                <div class="blok-avatar">
-                                    <img src="./assets/img/avatar.svg" alt="">
-                                </div>
-                                <p class="bloks-name mt-2 mb-4">Nate</p>
-                                <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
-                                        alt=""></div>
-                            </li>
-                            <li class="blok-item">
-                                <div class="blok-avatar">
-                                    <img src="./assets/img/avatar.svg" alt="">
-                                </div>
-                                <p class="bloks-name mt-2 mb-4">Nate</p>
-                                <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
-                                        alt=""></div>
-                            </li>
-                            <li class="blok-item">
-                                <div class="blok-avatar">
-                                    <img src="./assets/img/avatar.svg" alt="">
-                                </div>
-                                <p class="bloks-name mt-2 mb-4">Nate</p>
-                                <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
-                                        alt=""></div>
-                            </li>
-                            <li class="blok-item">
-                                <div class="blok-avatar">
-                                    <img src="./assets/img/avatar.svg" alt="">
-                                </div>
-                                <p class="bloks-name mt-2 mb-4">Nate</p>
-                                <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
-                                        alt=""></div>
-                            </li>
-                            <li class="blok-item">
-                                <div class="blok-avatar">
-                                    <img src="./assets/img/avatar.svg" alt="">
-                                </div>
-                                <p class="bloks-name mt-2 mb-4">Nate</p>
-                                <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
-                                        alt=""></div>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="header-chart mt-4 pt-4">
-
-
-                        <div class="header-friends d-flex justify-content-between align-items-center">
-                            <div class="d-flex">
-                                <img class="me-2 ms-4 ps-4" src="./assets/img/invite-friends.svg" alt="">
-                                <h3 class="fs-5">Members</h3>
-                            </div>
-                            <button class="dot-btn dot-btn--right">
-                                <span class="dot"></span>
-                                <span class="dot mx-1"></span>
-                                <span class="dot"></span>
-                            </button>
-                        </div>
-                        <canvas id="myChart" class="chart ms-4 ps-4">
-
-
-                        </canvas>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-    </main>
-
-    <div class="overlay">
-        <div class="img-box">
-            <div id="image-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list list-unstyled">
-                        <li class="splide__slide">
-                            <img class="photo" src="https://i.ytimg.com/vi/bZ_nVavyWDs/maxresdefault.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img class="photo"
-                                src="https://3.bp.blogspot.com/-wuFcEaXtUCw/VVyaOa-DHiI/AAAAAAAA0L4/hyUGM2F4B2o/s1600/travel.jpg">
-                        </li>
-                        <li class="splide__slide">
-                            <img class="photo" src="https://mir-da.ru/wp-content/uploads/2019/12/30-2.jpg">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="overlay-info">
-                <h2 class="overlay-title mt-4 mb-4">
-                    25 Lakeland Terrace, Westland,
-                    Michigan, USA
-                </h2>
-                <div class="mb-2 d-flex justify-content-between align-items-center">
-                    <p class="overlay-text">Apartment | by Robbin Johnson</p>
-                    <img class="mb-3" src="./assets/img/Vector (3).svg" alt="">
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <ul class="overlay-list list-unstyled d-flex ">
-                        <li class="overlay-item me-4">
-                            <a href="#" class="overlay-link">
-                                <img src="./assets/img/Nature.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="overlay-item me-4">
-                            <a href="#" class="overlay-link">
-                                <img src="./assets/img/Vector (4).svg" alt="">
-                            </a>
-                        </li>
-                        <li class="overlay-item me-4">
-                            <a href="#" class="overlay-link">
-                                <img src="./assets/img/Group (1).svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
+            <div class="navbar">
+                <div class="container">
                     <div class="">
-                        <p class="overlay-cost">$ 2,900.00</p>
+                        <h1 class="navbar-title">Shikra.</h1>
+                    </div>
+                    <form class="navbar-form">
+                        <img src="./assets/img/Union (1).svg" alt="" class="search-icon">
+                        <input type="text" placeholder="Search" class="navbar-input me-2">
+                        <button class="navbar-button">
+                            <img src="./assets/img/tune.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="header">
+                <div class="container">
+                    <div class=" d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/img/compass (1).svg" alt="">
+                            <h2 class="header-explore ms-3 mt-4">Explore</h2>
+                        </div>
+                        <div class="button-group me-4 pe-4">
+                            <button class="left-btn">
+                                <</button> <button class="right-btn">>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="header-part mt-4 d-flex justify-content-between align-items-center">
+                        <div class="header-rotate">
+                            <ul class="header-list list-unstyled">
+                                <li class="header-item">
+                                    <button class="header-btn">
+                                        America
+                                    </button>
+                                </li>
+                                <li class="header-item header-item--active">
+                                    <button class="header-btn active">
+                                        Sights
+                                    </button>
+                                </li>
+                                <li class="header-item">
+                                    <button class="header-btn">
+                                        Europe
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-picture mt-4 d-flex justify-content-between align-items-center">
+                            <ul class="picture-list list-unstyled">
+                                <li class="picture-item">
+                                    <div class="header-images">
+                                        <img class="header-thumb" src="./assets/img/Rectangle 5 (1).svg" alt="">
+                                        <img class="picture-icon" src="./assets/img/Group 8.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="picture-item mt-3">
+                                    <h3 class="picture-title">
+                                        Phi Phi Islands
+                                    </h3>
+                                </li>
+
+                                <li class="picture-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img class="picture-map" src="./assets/img/map.svg" alt="">
+                                        <p class="picture-loc mt-3 ms-2">
+                                            Thailand
+                                        </p>
+                                    </div>
+                                    <p class="picture-cost me-2">$1,480</p>
+                                </li>
+                            </ul>
+
+                            <ul class="picture-list list-unstyled">
+                                <li class="picture-item">
+                                    <div class="header-images">
+                                        <img class="header-thumb" src="./assets/img/Rectangle 5.svg" alt="">
+                                        <img class="picture-icon" src="./assets/img/Group 8.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="picture-item mt-3">
+                                    <h3 class="picture-title">
+                                        Kudahuvadhoo Island
+                                    </h3>
+                                </li>
+
+                                <li class="picture-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img class="picture-map" src="./assets/img/map.svg" alt="">
+                                        <p class="picture-loc mt-3 ms-2">
+                                            Maldives
+                                        </p>
+                                    </div>
+                                    <p class="picture-cost me-2">$1,480</p>
+                                </li>
+                            </ul>
+
+                            <ul class="picture-list list-unstyled">
+                                <li class="picture-item">
+                                    <div class="header-images">
+                                        <img class="header-thumb" src="./assets/img/Rectangle 5 (2).svg" alt="">
+                                        <img class="picture-icon" src="./assets/img/Group 8.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="picture-item mt-3">
+                                    <h3 class="picture-title">
+                                        Greecevillage
+                                    </h3>
+                                </li>
+
+                                <li class="picture-item d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img class="picture-map" src="./assets/img/map.svg" alt="">
+                                        <p class="picture-loc mt-3 ms-2">
+                                            Maldives
+                                        </p>
+                                    </div>
+                                    <p class="picture-cost me-2">$1,480</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blok-part d-flex">
+                        <div class="header-blok mt-4 pt-4">
+
+                            <div class="header-friends d-flex justify-content-between align-items-center">
+                                <div class="d-flex">
+                                    <img class="me-4" src="./assets/img/invite-friends.svg" alt="">
+                                    <h3 class="fs-5">Invite Friends</h3>
+                                </div>
+                                <button class="dot-btn">
+                                    <span class="dot"></span>
+                                    <span class="dot mx-1"></span>
+                                    <span class="dot"></span>
+                                </button>
+                            </div>
+
+
+
+                            <ul class="blok-list list-unstyled ">
+                                <li class="blok-item">
+                                    <div class="blok-avatar">
+                                        <img src="./assets/img/avatar.svg" alt="">
+                                    </div>
+                                    <p class="bloks-name mt-2 mb-4">Nate</p>
+                                    <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
+                                            alt=""></div>
+                                </li>
+                                <li class="blok-item">
+                                    <div class="blok-avatar">
+                                        <img src="./assets/img/avatar.svg" alt="">
+                                    </div>
+                                    <p class="bloks-name mt-2 mb-4">Nate</p>
+                                    <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
+                                            alt=""></div>
+                                </li>
+                                <li class="blok-item">
+                                    <div class="blok-avatar">
+                                        <img src="./assets/img/avatar.svg" alt="">
+                                    </div>
+                                    <p class="bloks-name mt-2 mb-4">Nate</p>
+                                    <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
+                                            alt=""></div>
+                                </li>
+                                <li class="blok-item">
+                                    <div class="blok-avatar">
+                                        <img src="./assets/img/avatar.svg" alt="">
+                                    </div>
+                                    <p class="bloks-name mt-2 mb-4">Nate</p>
+                                    <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
+                                            alt=""></div>
+                                </li>
+                                <li class="blok-item">
+                                    <div class="blok-avatar">
+                                        <img src="./assets/img/avatar.svg" alt="">
+                                    </div>
+                                    <p class="bloks-name mt-2 mb-4">Nate</p>
+                                    <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
+                                            alt=""></div>
+                                </li>
+                                <li class="blok-item">
+                                    <div class="blok-avatar">
+                                        <img src="./assets/img/avatar.svg" alt="">
+                                    </div>
+                                    <p class="bloks-name mt-2 mb-4">Nate</p>
+                                    <div class="bloks-icons"><img class="bloks-notification" src="./assets/img/x.svg"
+                                            alt=""></div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="header-chart mt-4 pt-4">
+
+
+                            <div class="header-friends d-flex justify-content-between align-items-center">
+                                <div class="d-flex">
+                                    <img class="me-2 ms-4 ps-4" src="./assets/img/invite-friends.svg" alt="">
+                                    <h3 class="fs-5">Members</h3>
+                                </div>
+                                <button class="dot-btn dot-btn--right">
+                                    <span class="dot"></span>
+                                    <span class="dot mx-1"></span>
+                                    <span class="dot"></span>
+                                </button>
+                            </div>
+                            <canvas id="myChart" class="chart ms-4 ps-4">
+
+
+                            </canvas>
+
+                        </div>
+
                     </div>
                 </div>
-                <div class="">
-                    <ul class="property-list list-unstyled d-flex justify-content-between align-items-center">
-                        <li class="property-item d-flex justify-content-center align-items-center">
-                            <img class="me-2" src="./assets/img/property 1.svg" alt="">
-                            <p class="property-text mt-3">
-                                Used property
-                            </p>
-                        </li>
-                        <li class="property-item d-flex justify-content-center align-items-center">
-                            <img class="me-2 " src="./assets/img/bed 1.svg" alt="">
-                            <p class="property-text mt-3">
-                                4
-                            </p>
-                        </li>
-                        <li class="property-item d-flex justify-content-center align-items-center">
-                            <img class="me-2" src="./assets/img/Layer 2 (1).svg" alt="">
-                            <p class="property-text mt-3">
-                                170 m2
-                            </p>
-                        </li>
+            </div>
 
-                    </ul>
+
+
+
+
+
+
+
+        </main>
+
+        <div class="overlay">
+            <div class="img-box">
+                <div id="image-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list list-unstyled">
+                            <li class="splide__slide">
+                                <img class="photo" src="https://i.ytimg.com/vi/bZ_nVavyWDs/maxresdefault.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="photo"
+                                    src="https://3.bp.blogspot.com/-wuFcEaXtUCw/VVyaOa-DHiI/AAAAAAAA0L4/hyUGM2F4B2o/s1600/travel.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img class="photo" src="https://mir-da.ru/wp-content/uploads/2019/12/30-2.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay-info">
+                    <h2 class="overlay-title mt-4 mb-4">
+                        25 Lakeland Terrace, Westland,
+                        Michigan, USA
+                    </h2>
+                    <div class="mb-2 d-flex justify-content-between align-items-center">
+                        <p class="overlay-text">Apartment | by Robbin Johnson</p>
+                        <img class="mb-3" src="./assets/img/Vector (3).svg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <ul class="overlay-list list-unstyled d-flex ">
+                            <li class="overlay-item me-4">
+                                <a href="#" class="overlay-link">
+                                    <img src="./assets/img/Nature.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="overlay-item me-4">
+                                <a href="#" class="overlay-link">
+                                    <img src="./assets/img/Vector (4).svg" alt="">
+                                </a>
+                            </li>
+                            <li class="overlay-item me-4">
+                                <a href="#" class="overlay-link">
+                                    <img src="./assets/img/Group (1).svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="">
+                            <p class="overlay-cost">$ 2,900.00</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <ul class="property-list list-unstyled d-flex justify-content-between align-items-center">
+                            <li class="property-item d-flex justify-content-center align-items-center">
+                                <img class="me-2" src="./assets/img/property 1.svg" alt="">
+                                <p class="property-text mt-3">
+                                    Used property
+                                </p>
+                            </li>
+                            <li class="property-item d-flex justify-content-center align-items-center">
+                                <img class="me-2 " src="./assets/img/bed 1.svg" alt="">
+                                <p class="property-text mt-3">
+                                    4
+                                </p>
+                            </li>
+                            <li class="property-item d-flex justify-content-center align-items-center">
+                                <img class="me-2" src="./assets/img/Layer 2 (1).svg" alt="">
+                                <p class="property-text mt-3">
+                                    170 m2
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Toshkent</a><a
+                            href="https://yandex.uz/maps/10335/tashkent/?ll=69.245230%2C41.325109&utm_medium=mapframe&utm_source=maps&z=18"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Toshkent —
+                            Yandex.Xarita</a><iframe src="https://yandex.uz/map-widget/v1/-/CCUafAAg-D" width="560"
+                            height="300" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                    <div class="overlay-photos">
+                        <div class=" mt-4 overlay-content d-flex justify-content-between align-items-center">
+                            <h1 class="overlay-subtitle">
+                                Photos
+                            </h1>
+                            <button class="dot-btn ">
+                                <span class="dot"></span>
+                                <span class="dot mx-1"></span>
+                                <span class="dot"></span>
+                            </button>
+                        </div>
+                        <div class="overlay-thumb">
+                            <ul class="overlay-photos--list list-unstyled">
+                                <li class="overlay-photos--item g-3 mt-4">
+                                    <img src="./assets/img/image 27 (1).png" alt="">
+                                </li>
+                                <li class="overlay-photos--item g-3 mt-4">
+                                    <img src="./assets/img/image 27 (1).png" alt="">
+                                </li>
+                                <li class="overlay-photos--item g-3 mt-4">
+                                    <img src="./assets/img/image 27 (1).png" alt="">
+                                </li>
+                                <li class="overlay-photos--item g-3 mt-4">
+                                    <img src="./assets/img/image 27 (1).png" alt="">
+                                </li>
+                                <li class="overlay-photos--item g-3 mt-4">
+                                    <img src="./assets/img/image 27 (1).png" alt="">
+                                </li>
+                                <li class="overlay-photos--item g-3 mt-4">
+                                    <img src="./assets/img/image 27 (1).png" alt="">
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
