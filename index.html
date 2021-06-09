@@ -10,9 +10,9 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -277,28 +277,28 @@
                         </ul>
                     </div>
                     <div class="header-chart mt-4 pt-4">
-                        
 
-                            <div class="header-friends d-flex justify-content-between align-items-center">
-                                <div class="d-flex">
-                                    <img class="me-2 ms-4 ps-4" src="./assets/img/invite-friends.svg" alt="">
-                                    <h3 class="fs-5">Members</h3>
-                                </div>
-                                <button class="dot-btn dot-btn--right">
-                                    <span class="dot"></span>
-                                    <span class="dot mx-1"></span>
-                                    <span class="dot"></span>
-                                </button>
+
+                        <div class="header-friends d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <img class="me-2 ms-4 ps-4" src="./assets/img/invite-friends.svg" alt="">
+                                <h3 class="fs-5">Members</h3>
                             </div>
+                            <button class="dot-btn dot-btn--right">
+                                <span class="dot"></span>
+                                <span class="dot mx-1"></span>
+                                <span class="dot"></span>
+                            </button>
+                        </div>
                         <canvas id="myChart" class="chart ms-4 ps-4">
 
 
                         </canvas>
-                    
-                </div>
 
+                    </div>
+
+                </div>
             </div>
-        </div>
         </div>
 
 
@@ -310,8 +310,8 @@
 
     </main>
 
-     <div class="overlay">
-         <div class="img-box">
+    <div class="overlay">
+        <div class="img-box">
             <div id="image-slider" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list list-unstyled">
@@ -319,7 +319,8 @@
                             <img class="photo" src="https://i.ytimg.com/vi/bZ_nVavyWDs/maxresdefault.jpg">
                         </li>
                         <li class="splide__slide">
-                            <img class="photo" src="https://3.bp.blogspot.com/-wuFcEaXtUCw/VVyaOa-DHiI/AAAAAAAA0L4/hyUGM2F4B2o/s1600/travel.jpg">
+                            <img class="photo"
+                                src="https://3.bp.blogspot.com/-wuFcEaXtUCw/VVyaOa-DHiI/AAAAAAAA0L4/hyUGM2F4B2o/s1600/travel.jpg">
                         </li>
                         <li class="splide__slide">
                             <img class="photo" src="https://mir-da.ru/wp-content/uploads/2019/12/30-2.jpg">
@@ -327,57 +328,67 @@
                     </ul>
                 </div>
             </div>
-            <h2 class="overlay-title">
-                25 Lakeland Terrace, Westland,
-Michigan, USA
-            </h2>
-            <div class=" d-flex justify-content-between align-items-center">
-            <p class="overlay-text">Apartment   |   by Robbin Johnson</p>
-            <img src="./assets/img/Vector (3).svg" alt="">
+            <div class="overlay-info">
+                <h2 class="overlay-title mt-4 mb-4">
+                    25 Lakeland Terrace, Westland,
+                    Michigan, USA
+                </h2>
+                <div class="mb-2 d-flex justify-content-between align-items-center">
+                    <p class="overlay-text">Apartment | by Robbin Johnson</p>
+                    <img class="mb-3" src="./assets/img/Vector (3).svg" alt="">
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <ul class="overlay-list list-unstyled d-flex ">
+                        <li class="overlay-item me-4">
+                            <a href="#" class="overlay-link">
+                                <img src="./assets/img/Nature.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="overlay-item me-4">
+                            <a href="#" class="overlay-link">
+                                <img src="./assets/img/Vector (4).svg" alt="">
+                            </a>
+                        </li>
+                        <li class="overlay-item me-4">
+                            <a href="#" class="overlay-link">
+                                <img src="./assets/img/Group (1).svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="">
+                        <p class="overlay-cost">$ 2,900.00</p>
+                    </div>
+                </div>
+                <div class="">
+                    <ul class="property-list list-unstyled d-flex justify-content-between align-items-center">
+                        <li class="property-item d-flex justify-content-center align-items-center">
+                            <img class="me-2" src="./assets/img/property 1.svg" alt="">
+                            <p class="property-text mt-3">
+                                Used property
+                            </p>
+                        </li>
+                        <li class="property-item d-flex justify-content-center align-items-center">
+                            <img class="me-2 " src="./assets/img/bed 1.svg" alt="">
+                            <p class="property-text mt-3">
+                                4
+                            </p>
+                        </li>
+                        <li class="property-item d-flex justify-content-center align-items-center">
+                            <img class="me-2" src="./assets/img/Layer 2 (1).svg" alt="">
+                            <p class="property-text mt-3">
+                                170 m2
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center">
-        <ul class="overlay-list">
-            <li class="overlay-item">
-                <a href="#" class="overlay-link">
-                    <img src="./assets/img/Nature.svg" alt="">
-                </a>
-            </li>
-            <li class="overlay-item">
-                <a href="#" class="overlay-link">
-                    <img src="./assets/img/Vector (4).svg" alt="">
-                </a>
-            </li>
-            <li class="overlay-item">
-                <a href="#" class="overlay-link">
-                    <img src="./assets/img/Group (1).svg" alt="">
-                </a>
-            </li>
-        </ul>
-        <div class="">
-            <p class="overlay-cost">$ 2,900.00</p>
-        </div>
-         </div>
-         <div class="">
-<ul class="property-list">
-    <li class="property-item">
-        <img class="me-2" src="./assets/img/property 1.svg" alt="">
-<p class="property-text">
-    Used property
-</p>
-    </li>
-    <li class="property-item">
-        <img class="me-2" src="./assets/img/bed 1.svg" alt="">
-<p class="property-text">
-    4
-</p>
-    </li>
-    
-</ul>
-         </div>
-        </div>
-     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"
+        integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
