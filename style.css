@@ -9,7 +9,8 @@
 }
 
 .main {
-    width: 60%;
+    width: 67%;
+    z-index: -1;
 }
 .overlay {
     width: 25%;
@@ -356,3 +357,9 @@ color: #010101;
 	height: 250px;
 }
 
+
+
+.overlay{
+    background-color:#F5F9F7;
+    padding: 8px;
+}
