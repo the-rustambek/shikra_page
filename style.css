@@ -1,20 +1,23 @@
 .body{
-    position: relative;
+    /* position: relative; */
 }
 
 .aside {
+    
     width: 12%;
     background-color: #F1F3F9;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    
 
 }
 
 .main {
     width: 88%;
-    z-index: -1;
+    z-index: 0;
+    
 }
 
 
@@ -31,9 +34,12 @@
 .aside-list {
     margin-top: 60px;
 }
+.blok-avatar img{
+    overflow: hidden;
+}
 
 .aside-item {
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .aside-title {
@@ -99,16 +105,13 @@
     text-align: center;
     border: none;
     background-color: white;
-    background: #FFFFFF;
+    background: #F1F3F9;
     border-radius: 10px;
     transform: rotate(0.56deg);
     padding: 10px;
 }
 
-.aside-footer--btn:hover {
-    background-color: black;
-    transition: 0.3s;
-}
+
 
 .navbar {
     background-color: #F6F7FB;
@@ -271,6 +274,7 @@
 
 .header-chart {
     width: 60%;
+    height: 600px;
 }
 
 .dot-btn {
@@ -316,6 +320,7 @@
 
 .blok-item {
     width: 30%;
+    height: 190px;
     padding: 15px 25px;
     display: flex;
     justify-content: center;
@@ -351,6 +356,15 @@
     transform: translate(-50%);
 }
 
+
+.blok-item--qizgishsariq, .blok-item--qizgishsariq .blok-avatar , .blok-item--qizgishsariq .bloks-icons{
+    background-color: #FFEFBC;
+}
+
+.blok-item--pink, .blok-item--pink .blok-avatar, .blok-item--pink .bloks-icons{
+    background-color: #FFE8E8;
+}
+
 .dot-btn--right {
     margin-left: 400px;
 }
@@ -382,8 +396,9 @@
     padding: 15px;
     width: 320px;
     position: absolute;
-    top: 0;
+    top: 2%;
     right: 0;
+ display: none;   
 }
 
 
