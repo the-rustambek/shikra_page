@@ -108,59 +108,59 @@ const DATA = [
 
 
 
-const regions = DATA.map(function (element) {
-  return element.region
-})
+// const regions = DATA.map(function (element) {
+//   return element.region
+// })
 
-regions.forEach(function (element) {
-  const pictureListElement = document.querySelector('.picture-list')
-  pictureListElement.setAttribute("value", element)
-  pictureListElement.textContent = element
-  rasmTanlash.appendChild(pictureListElement)
-})
+// regions.forEach(function (element) {
+//   const pictureListElement = document.querySelector('.picture-list')
+//   pictureListElement.setAttribute("value", element)
+//   pictureListElement.textContent = element
+//   rasmTanlash.appendChild(pictureListElement)
+// })
 
-rasmTanlash.addEventListener('change', event => {
-  const filteredData = DATA.filter(function (element ) {
-      return element.region == event.target.value
-  })
-  filteredData.forEach(function (element) {
-    const pictureListElement = document.querySelector('.picture-item')
-      pictureListElement.setAttribute("value", element.name)
-      pictureListElement.textContent = element.name
-      nameTanlash.appendChild(pictureListElement)
-  })
-  filteredData.forEach(function (element) {
-    const pictureListElement = document.querySelector('.picture-item')
-      pictureListElement.setAttribute("value", element.img)
-      pictureListElement.textContent = element.img
-      imgTanlash.appendChild(pictureListElement)
-  })
-  filteredData.forEach(function (element) {
-    const pictureListElement = document.querySelector('.picture-item')
-      pictureListElement.setAttribute("value", element.cost)
-      pictureListElement.textContent = element.cost
-      costTanlash.appendChild(pictureListElement)
-  })
+// rasmTanlash.addEventListener('change', event => {
+//   const filteredData = DATA.filter(function (element ) {
+//       return element.region == event.target.value
+//   })
+//   filteredData.forEach(function (element) {
+//     const pictureListElement = document.querySelector('.picture-item')
+//       pictureListElement.setAttribute("value", element.name)
+//       pictureListElement.textContent = element.name
+//       nameTanlash.appendChild(pictureListElement)
+//   })
+//   filteredData.forEach(function (element) {
+//     const pictureListElement = document.querySelector('.picture-item')
+//       pictureListElement.setAttribute("value", element.img)
+//       pictureListElement.textContent = element.img
+//       imgTanlash.appendChild(pictureListElement)
+//   })
+//   filteredData.forEach(function (element) {
+//     const pictureListElement = document.querySelector('.picture-item')
+//       pictureListElement.setAttribute("value", element.cost)
+//       pictureListElement.textContent = element.cost
+//       costTanlash.appendChild(pictureListElement)
+//   })
   
-})
+// })
 
-ok.addEventListener('click', event => {
-  const rasm = DATA.find(function (element) {
-      return element.name == rasmTanlash.value
-  })
-  info.textContent = null
-  const imageElement = document.createElement('img')
-  const nameElement = document.createElement('p')
-  const costElement=document.createElement('p')
+// ok.addEventListener('click', event => {
+//   const rasm = DATA.find(function (element) {
+//       return element.name == rasmTanlash.value
+//   })
+//   info.textContent = null
+//   const imageElement = document.createElement('img')
+//   const nameElement = document.createElement('p')
+//   const costElement=document.createElement('p')
 
 
-  imageElement.setAttribute('src', rasm.img)
-  nameElement.textContent = rasm.name
+//   imageElement.setAttribute('src', rasm.img)
+//   nameElement.textContent = rasm.name
 
-  info.appendChild(imageElement)
-  info.appendChild(nameElement)
-  info.appendChild(costElement)
-})
+//   info.appendChild(imageElement)
+//   info.appendChild(nameElement)
+//   info.appendChild(costElement)
+// })
 
 
 
@@ -196,6 +196,7 @@ navbarButtonElement.addEventListener("dblclick", e => {
   overlayElement.style.display = "none"
   navbarPartElement.style.marginRight='0px'
   buttonGroupElement.style.marginRight='0px'
+  chartElement.style.width="650px"
 }) 
 
 // menuToggleButton.addEventListener('click', e=>{

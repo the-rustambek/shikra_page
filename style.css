@@ -299,10 +299,6 @@
     border-radius: 50%;
 }
 
-.blok-item {
-    background: #ECFAFF;
-    border-radius: 14px;
-}
 
 .blok-avatar {
     background: #ECFAFF;
@@ -325,8 +321,11 @@
 }
 
 .blok-item {
+    
+    background: #ECFAFF;
+    border-radius: 14px;
     width: 30%;
-    height: 190px;
+    height: 160px;
     padding: 15px 25px;
     display: flex;
     justify-content: center;
@@ -423,7 +422,11 @@
 }
 
 .overlay-link {
-    padding: 6px;
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    padding: 5px;
+    overflow: hidden;
     background-color: white;
     border-radius: 50%;
     border: 2px solid rgb(246, 244, 244);
@@ -471,4 +474,15 @@
 }
 .photo{
     object-fit: cover;
+}
+
+.overlay-link{
+    overflow: hidden;
+    object-fit: cover;
+width: 15px;
+height: 15px;
+}
+
+.overlay-photos--item img{
+    border-radius: 10px;
 }
