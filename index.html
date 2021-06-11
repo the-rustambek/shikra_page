@@ -91,13 +91,22 @@
                     <div class="">
                         <h1 class="navbar-title">Shikra.</h1>
                     </div>
-                    <form class="navbar-form">
-                        <img src="./assets/img/Union (1).svg" alt="" class="search-icon">
+                    <ul class="navbar-part d-flex justify-content-center align-items-center list-unstyled">
+                        <li class="">
+                    <form class="navbar-form me-3">
+                        <button class="search-button">
+                        <img class="mb-2" src="./assets/img/Union (1).svg" alt="" class="search-icon">
+                    </button>
                         <input type="text" placeholder="Search" class="navbar-input me-2">
-                        <button class="navbar-button">
-                            <img src="./assets/img/tune.svg" alt="">
-                        </button>
+                        
                     </form>
+                </li>
+                <li class="">
+                    <button class="navbar-button">
+                        <img src="./assets/img/tune.svg" alt="">
+                    </button>
+                </li>
+                </ul>
                 </div>
             </div>
 
@@ -108,9 +117,10 @@
                             <img src="./assets/img/compass (1).svg" alt="">
                             <h2 class="header-explore ms-3 mt-4">Explore</h2>
                         </div>
-                        <div class="button-group me-4 pe-4">
+                        <div class="button-group">
                             <button class="left-btn">
-                                <</button> <button class="right-btn">>
+                                <</button>
+                                 <button class="right-btn">>
                             </button>
                         </div>
                     </div>
@@ -136,7 +146,7 @@
                             </ul>
                         </div>
                         <div class="header-picture mt-4 d-flex justify-content-between align-items-center">
-                            <ul class="picture-list list-unstyled">
+                            <ul class="picture-list list-unstyled" id="picture-first">
                                 <li class="picture-item">
                                     <div class="header-images">
                                         <img class="header-thumb" src="./assets/img/Rectangle 5 (1).svg" alt="">
@@ -160,7 +170,7 @@
                                 </li>
                             </ul>
 
-                            <ul class="picture-list list-unstyled">
+                            <ul class="picture-list list-unstyled" id="picture-second">
                                 <li class="picture-item">
                                     <div class="header-images">
                                         <img class="header-thumb" src="./assets/img/Rectangle 5.svg" alt="">
@@ -184,7 +194,7 @@
                                 </li>
                             </ul>
 
-                            <ul class="picture-list list-unstyled">
+                            <ul class="picture-list list-unstyled" id="picture-third">
                                 <li class="picture-item">
                                     <div class="header-images">
                                         <img class="header-thumb" src="./assets/img/Rectangle 5 (2).svg" alt="">
@@ -341,7 +351,7 @@
                         25 Lakeland Terrace, Westland,
                         Michigan, USA
                     </h2>
-                    <div class="mb-2 d-flex justify-content-between align-items-center">
+                    <div class="mb-3 mt-3 d-flex justify-content-between align-items-center">
                         <p class="overlay-text">Apartment | by Robbin Johnson</p>
                         <img class="mb-3" src="./assets/img/Vector (3).svg" alt="">
                     </div>
@@ -390,7 +400,7 @@
 
                         </ul>
                     </div>
-                    <div style="position:relative;overflow:hidden;"><a
+                    <div style="position:relative;margin-top:30px;margin-bottom:40px;overflow:hidden;"><a
                             href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
                             style="color:#eee;font-size:12px;position:absolute;top:0px;">Toshkent</a><a
                             href="https://yandex.uz/maps/10335/tashkent/?ll=69.245230%2C41.325109&utm_medium=mapframe&utm_source=maps&z=18"
