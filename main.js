@@ -64,7 +64,7 @@ const DATA = [
       "https://img5.goodfon.ru/original/1920x1200/7/ac/shilla-doma-krysha-more-zamok-ruffo.jpg",
       "https://avatars.mds.yandex.net/get-zen_doc/4359735/pub_6050c8ea150a5a65fbaf7413_6050cf51974a7a1569ab7d40/scale_1200",
       "http://route.in.ua/sites/default/files/images/rodos/Dodecanese215.jpg",
-     
+      "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGt1ZGFodXZhZGhvbyUyMGlzbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     ],  
     region: "Thailand",
       cost: 1480
@@ -81,6 +81,7 @@ const DATA = [
       "https://planettravel24.com/wp-content/uploads/2020/04/osos-e1587743626911-1024x625.jpg",
       "https://images.unsplash.com/photo-1534516912899-33ab52feb2f4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGt1ZGFodXZhZGhvbyUyMGlzbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "https://e.allegroimg.com/original/01bc94/e2b67d0f44f8a91fd4227730785e",
+      "https://pixy.org/src/0/3713.jpg",
       "https://www.bookmaldivespackages.com/images/uploads/resorts/brennia-kottefaru-resort-maldives-public-swimming-pool.jpeg",    
     ],
       cost: 1590
@@ -95,6 +96,7 @@ const DATA = [
       photos: [ "https://storage.needpix.com/rsynced_images/greece-2769163_1280.jpg", 
       "https://res.cloudinary.com/fleetnation/image/private/c_fit,h_1120,w_1120/c_scale,fl_no_overflow,l_watermarks:wafy3xokd4awrrhw3i1o,o_50,w_200/v1572416206/gae7xa8yylkpquss1uyk.jpg",
       "https://pixy.org/src/0/3713.jpg",
+      "https://images.unsplash.com/photo-1534516912899-33ab52feb2f4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGt1ZGFodXZhZGhvbyUyMGlzbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "https://i.pinimg.com/originals/f4/7d/ea/f47deabf078b599a978bf7b40b187f3d.jpg",
       "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGt1ZGFodXZhZGhvbyUyMGlzbGFuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     ],
@@ -106,59 +108,59 @@ const DATA = [
 
 
 
-// const regions = DATA.map(function (element) {
-//   return element.region
-// })
+const regions = DATA.map(function (element) {
+  return element.region
+})
 
-// regions.forEach(function (element) {
-//   const pictureListElement = document.querySelector('.picture-list')
-//   pictureListElement.setAttribute("value", element)
-//   pictureListElement.textContent = element
-//   rasmTanlash.appendChild(pictureListElement)
-// })
+regions.forEach(function (element) {
+  const pictureListElement = document.querySelector('.picture-list')
+  pictureListElement.setAttribute("value", element)
+  pictureListElement.textContent = element
+  rasmTanlash.appendChild(pictureListElement)
+})
 
-// rasmTanlash.addEventListener('change', event => {
-//   const filteredData = DATA.filter(function (element ) {
-//       return element.region == event.target.value
-//   })
-//   filteredData.forEach(function (element) {
-//     const pictureListElement = document.querySelector('.picture-item')
-//       pictureListElement.setAttribute("value", element.name)
-//       pictureListElement.textContent = element.name
-//       nameTanlash.appendChild(pictureListElement)
-//   })
-//   filteredData.forEach(function (element) {
-//     const pictureListElement = document.querySelector('.picture-item')
-//       pictureListElement.setAttribute("value", element.img)
-//       pictureListElement.textContent = element.img
-//       imgTanlash.appendChild(pictureListElement)
-//   })
-//   filteredData.forEach(function (element) {
-//     const pictureListElement = document.querySelector('.picture-item')
-//       pictureListElement.setAttribute("value", element.cost)
-//       pictureListElement.textContent = element.cost
-//       costTanlash.appendChild(pictureListElement)
-//   })
+rasmTanlash.addEventListener('change', event => {
+  const filteredData = DATA.filter(function (element ) {
+      return element.region == event.target.value
+  })
+  filteredData.forEach(function (element) {
+    const pictureListElement = document.querySelector('.picture-item')
+      pictureListElement.setAttribute("value", element.name)
+      pictureListElement.textContent = element.name
+      nameTanlash.appendChild(pictureListElement)
+  })
+  filteredData.forEach(function (element) {
+    const pictureListElement = document.querySelector('.picture-item')
+      pictureListElement.setAttribute("value", element.img)
+      pictureListElement.textContent = element.img
+      imgTanlash.appendChild(pictureListElement)
+  })
+  filteredData.forEach(function (element) {
+    const pictureListElement = document.querySelector('.picture-item')
+      pictureListElement.setAttribute("value", element.cost)
+      pictureListElement.textContent = element.cost
+      costTanlash.appendChild(pictureListElement)
+  })
   
-// })
+})
 
-// ok.addEventListener('click', event => {
-//   const rasm = DATA.find(function (element) {
-//       return element.name == rasmTanlash.value
-//   })
-//   info.textContent = null
-//   const imageElement = document.createElement('img')
-//   const nameElement = document.createElement('p')
-//   const costElement=document.createElement('p')
+ok.addEventListener('click', event => {
+  const rasm = DATA.find(function (element) {
+      return element.name == rasmTanlash.value
+  })
+  info.textContent = null
+  const imageElement = document.createElement('img')
+  const nameElement = document.createElement('p')
+  const costElement=document.createElement('p')
 
 
-//   imageElement.setAttribute('src', rasm.img)
-//   nameElement.textContent = rasm.name
+  imageElement.setAttribute('src', rasm.img)
+  nameElement.textContent = rasm.name
 
-//   info.appendChild(imageElement)
-//   info.appendChild(nameElement)
-//   info.appendChild(costElement)
-// })
+  info.appendChild(imageElement)
+  info.appendChild(nameElement)
+  info.appendChild(costElement)
+})
 
 
 
@@ -174,15 +176,19 @@ const thirdElement=document.querySelector('#picture-third')
 const headerPartElement=document.querySelector('.header-part')
 const chartElement=document.querySelector('#myChart')
 const headerBlokElement=document.querySelector('.header-blok')
- const asideButtonElement=document.querySelector('.menu-button')
+const asideButtonElement=document.querySelector('.menu-button')
+const menuToggleButton=document.querySelector('.menu-button')
+const pictureElement=document.querySelector('.header-picture')
+ const asideLinkElement=document.querySelectorAll('.aside-link')
 
- navbarButtonElement.addEventListener("click", e => {
+navbarButtonElement.addEventListener("click", e => {
    
   overlayElement.style.display = "block"
   navbarPartElement.style.marginRight='250px'
   buttonGroupElement.style.marginRight='270px'
   chartElement.style.width="400px"
   headerBlokElement.style.width="300px"
+  pictureElement.style.marginRight="80px"
   
 }) 
 
@@ -191,3 +197,12 @@ navbarButtonElement.addEventListener("dblclick", e => {
   navbarPartElement.style.marginRight='0px'
   buttonGroupElement.style.marginRight='0px'
 }) 
+
+// menuToggleButton.addEventListener('click', e=>{
+//   asideLinkElement.style.flexDirection='row'
+// })
+
+// menuToggleButton.addEventListener('dbclick', e=>{
+//   asideLinkElement.style.flexDirection='column'
+// })
+

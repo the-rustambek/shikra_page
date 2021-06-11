@@ -1,6 +1,4 @@
-.body{
-    /* position: relative; */
-}
+
 
 .aside {
     
@@ -448,4 +446,29 @@
 }
 .overlay-photos--item img{
     width: 80px;
+}
+
+.picture-icon:hover ,.overlay-photos--item:hover, .blok-avatar:hover,  .picture-map:hover, .aside-thumb:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.header-thumb:hover{
+    transform: scale(0.96);
+    transition: 0.3s;
+}
+.bloks-icons{
+    overflow: hidden;
+    object-fit: cover;
+}
+.dot-btn{
+    border: 1px solid white;
+}
+.dot-btn:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+    border: 1px solid #3246D3;
+}
+.photo{
+    object-fit: cover;
 }
